@@ -1,0 +1,9 @@
+{%block content%}
+
+    {%for key, value in dicionario.items()%}
+        <li>{{key}}: {{value}}</li>
+    {%endfor%}
+
+    <p>Voltar para <a href="/home">página inicial</a>!</p>
+    
+{%endblock%}

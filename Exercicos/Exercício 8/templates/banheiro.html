@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Banheiro</title>
+</head>
+<body>
+    <h1>Sensores/Atuadores no banheiro</h1>
+    <ul>
+        {%for key, value in opcoes.items()%}
+            <li><a href={{value}}>{{key}}</a></li>
+        {%endfor%}
+    </ul>
+    <p>Voltar para <a href="/">página inicial</a>!</p>
+</body>
+</html>

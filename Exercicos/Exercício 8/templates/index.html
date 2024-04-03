@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Minha Casa</title>
+</head>
+<body>
+    <h2>Minha Casa</h2>
+    <h3>Escolha um cômodo:</h3>
+    <ul>
+        {% for key, value in comodos.items() %}
+            <li><a href={{key}}>{{value}}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
