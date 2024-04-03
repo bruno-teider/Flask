@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Minha Casa</title>
+</head>
+<body>
+    <h1>Atuadores</h1>
+    <ul>
+        {%for key, value in atuadores.items()%}
+            <li>{{key}} : 
+            {%if value == 1%}
+                Ligado </li>
+            {%else%}
+                Desligado </li>
+            {%endif%}
+        {%endfor%}
+    </ul>
+    <p>Voltar para <a href="/">página inicial</a>!</p>
+</body>
+</html>
