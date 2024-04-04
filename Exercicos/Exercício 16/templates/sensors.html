@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Minha Casa</title>
+</head>
+<body>
+    <h1>Sensores</h1>
+    <ul>
+        {%for key, value in sensores.items()%}
+            <li>{{ key }} : {{ value }}</li>
+        {% endfor%}
+    </ul>
+    <p>Voltar para <a href="/">página inicial</a>!</p>
+</body>
+</html>
