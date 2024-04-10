@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <form action="{{url_for('actuators.del_actuator')}}" method="post">
+            <select name="actuator" class="Input">
+                {% for key, value in atuadores.items() %}
+                    <option>{{ key }}</option>
+                {% endfor %}
+                <p><input type = "submit" value = "Deletar" /></p>
+            </select>
+        </form>
+    </body>
+</html>
