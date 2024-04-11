@@ -1,0 +1,22 @@
+{% extends"base.html" %}
+{% block content%}
+
+<div class="vertical-center">
+    <div class="container">
+        <h1>Cadastrar Atuadores</h1>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-body">
+                    <form action= "http://localhost:8080/add_actuator" method= "POST">
+                        <p>Sensor:</p>
+                        <p><input type = "text" name = "actuator" placeholder="Nome" required/></p>
+                        <p>Valor:</p>
+                        <p><input type = "text" name = "valor" placeholder="valor" required/></p>
+                        <p><input type = "submit" value = "Cadastrar" /></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}
